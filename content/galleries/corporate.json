@@ -1,0 +1,24 @@
+{
+  "images": [
+    {
+      "src": "https://images.unsplash.com/photo-dTH_E5Flc4c?auto=format&fit=crop&w=1400&q=80",
+      "alt": "Corporate event stage lights"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-6dW3xyQvcYE?auto=format&fit=crop&w=1400&q=80",
+      "alt": "Conference setup"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-gMsnXqILjp4?auto=format&fit=crop&w=1400&q=80",
+      "alt": "Business networking event"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1400&q=80",
+      "alt": "Corporate conference audience"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=80",
+      "alt": "Professional event team"
+    }
+  ]
+}

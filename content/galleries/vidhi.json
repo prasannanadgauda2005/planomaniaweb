@@ -1,0 +1,28 @@
+{
+  "images": [
+    {
+      "src": "https://images.unsplash.com/photo-_ObILA1XpSQ?auto=format&fit=crop&w=1400&q=80",
+      "alt": "Wedding mandap decor"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-8Y9sGMu3FCk?auto=format&fit=crop&w=1400&q=80",
+      "alt": "Wedding floral installation"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-4zZqZJ6ZOFs?auto=format&fit=crop&w=1400&q=80",
+      "alt": "Wedding ceremony lighting"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1N7wxh3FZJk?auto=format&fit=crop&w=1400&q=80",
+      "alt": "Wedding reception stage"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=1400&q=80",
+      "alt": "Wedding couple portrait"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=80",
+      "alt": "Wedding reception ambience"
+    }
+  ]
+}
