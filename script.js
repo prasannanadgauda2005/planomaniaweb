@@ -115,6 +115,33 @@ async function loadSiteMedia() {
   }
 }
 
+async function loadHeroPerPage() {
+  const page = document.body?.dataset?.page;
+  if (!page) {
+    return;
+  }
+  try {
+    const response = await fetch('content/heroes.json');
+    if (!response.ok) {
+      return;
+    }
+    const data = await response.json();
+    const heroVideo = data[page];
+    if (!heroVideo) {
+      return;
+    }
+    document.querySelectorAll('[data-hero-video]').forEach((video) => {
+      const source = video.querySelector('source');
+      if (source) {
+        source.src = heroVideo;
+        video.load();
+      }
+    });
+  } catch (error) {
+    // no-op
+  }
+}
+
 function attachLogoFallback() {
   document.querySelectorAll('[data-logo]').forEach((img) => {
     img.addEventListener('error', () => {
@@ -124,6 +151,7 @@ function attachLogoFallback() {
 }
 
 loadSiteMedia();
+loadHeroPerPage();
 attachLogoFallback();
 loadUpdates();
 ['corporate', 'social', 'festive', 'vidhi'].forEach((name) => loadGallery(name));

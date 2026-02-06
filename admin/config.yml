@@ -16,6 +16,15 @@ collections:
           - { label: "Hero video", name: "heroVideo", widget: "file", media_library: { allow_multiple: false } }
           - { label: "Hero poster", name: "heroPoster", widget: "image", required: false }
           - { label: "Logo", name: "logo", widget: "image", required: false }
+      - label: "Hero Videos"
+        name: "hero_videos"
+        file: "content/heroes.json"
+        fields:
+          - { label: "Home video", name: "home", widget: "file" }
+          - { label: "Vidhi video", name: "vidhi", widget: "file" }
+          - { label: "Corporate video", name: "corporate", widget: "file" }
+          - { label: "Social video", name: "social", widget: "file" }
+          - { label: "Festive video", name: "festive", widget: "file" }
 
   - name: "updates"
     label: "Updates"
