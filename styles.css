@@ -92,11 +92,28 @@ a {
 .nav a {
   opacity: 0.75;
   transition: opacity 0.2s ease;
+  position: relative;
 }
 
 .nav a:hover,
 .nav a.is-active {
   opacity: 1;
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), var(--pink), var(--teal));
+  transition: width 0.25s ease;
+}
+
+.nav a:hover::after,
+.nav a.is-active::after {
+  width: 100%;
 }
 
 .hero {
@@ -266,6 +283,15 @@ section::before {
   min-height: 180px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: block;
+}
+
+.card-cta {
+  display: inline-flex;
+  margin-top: 14px;
+  font-size: 12px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: rgba(247, 243, 255, 0.7);
 }
 
 .gallery-card:hover {

@@ -86,5 +86,44 @@ async function loadGallery(name) {
   }
 }
 
+async function loadSiteMedia() {
+  try {
+    const response = await fetch('content/site.json');
+    if (!response.ok) {
+      return;
+    }
+    const data = await response.json();
+    const heroVideo = data.heroVideo || '';
+    const heroPoster = data.heroPoster || '';
+    document.querySelectorAll('[data-hero-video]').forEach((video) => {
+      const source = video.querySelector('source');
+      if (source && heroVideo) {
+        source.src = heroVideo;
+        if (heroPoster) {
+          video.setAttribute('poster', heroPoster);
+        }
+        video.load();
+      }
+    });
+    if (data.logo) {
+      document.querySelectorAll('[data-logo]').forEach((img) => {
+        img.src = data.logo;
+      });
+    }
+  } catch (error) {
+    // no-op
+  }
+}
+
+function attachLogoFallback() {
+  document.querySelectorAll('[data-logo]').forEach((img) => {
+    img.addEventListener('error', () => {
+      img.src = 'assets/logo.png';
+    });
+  });
+}
+
+loadSiteMedia();
+attachLogoFallback();
 loadUpdates();
 ['corporate', 'social', 'festive', 'vidhi'].forEach((name) => loadGallery(name));
