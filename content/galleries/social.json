@@ -1,24 +1,16 @@
 {
   "images": [
     {
-      "src": "https://images.unsplash.com/photo-VxgLdWqlzuU?auto=format&fit=crop&w=1400&q=80",
-      "alt": "Birthday party decorations"
+      "src": "/assets/uploads/download.jpeg",
+      "alt": "birthday"
     },
     {
-      "src": "https://images.unsplash.com/photo-JVtPBwX1fMQ?auto=format&fit=crop&w=1400&q=80",
-      "alt": "Party lighting setup"
+      "src": "/assets/uploads/download-1-.jpeg",
+      "alt": "aniversary"
     },
     {
-      "src": "https://images.unsplash.com/photo-1K9T5YiZ2WU?auto=format&fit=crop&w=1400&q=80",
-      "alt": "Celebration table setting"
-    },
-    {
-      "src": "https://images.unsplash.com/photo-1529634597503-139d3726fed5?auto=format&fit=crop&w=1400&q=80",
-      "alt": "Evening party ambience"
-    },
-    {
-      "src": "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=1400&q=80",
-      "alt": "Confetti celebration moment"
+      "src": "/assets/uploads/download-3-.jpeg",
+      "alt": "proposal"
     }
   ]
 }
